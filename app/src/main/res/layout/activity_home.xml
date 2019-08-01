@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        tools:context=".HomeActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selctedFoodTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:fontFamily="@font/muli_bold" android:textSize="30sp"
+            app:layout_constraintHorizontal_bias="0.489" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" tools:text="Chinese"/>
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp" app:srcCompat="@drawable/dd_logo"
+            android:id="@+id/imageView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.501" android:layout_marginTop="50dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+            android:text="Decide!"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/decideBtn"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" android:textSize="18sp"
+            android:typeface="serif" android:textStyle="bold" android:textAllCaps="true"
+            android:textColor="@color/colorAccent"/>
+    <Button
+            android:text="ADD FOOD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addFoodBtn" android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp" android:layout_marginRight="80dp" android:layout_marginEnd="80dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:typeface="serif" android:textStyle="bold"
+            android:textSize="18sp" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/deleteListBtn"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/addFoodTxt"
+            android:typeface="serif" android:hint="Enter new Food..."
+            android:textAllCaps="false" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="80dp" android:layout_marginStart="80dp" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/addFoodBtn"
+    />
+    <Button
+            android:text="Delete food list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteListBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" android:background="@color/colorPrimary"
+            android:textStyle="bold" android:textAllCaps="true" android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="80dp" android:layout_marginEnd="80dp" android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/decideBtn" android:layout_marginBottom="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
